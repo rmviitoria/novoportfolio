@@ -1,19 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-* {
+body, html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
-body {
-    font-size: 100%;
-    background: #653463;
     font-family: 'Righteous', cursive;
-    color: #ffffff;
-    overflow-x: hidden;
-    text-align: center;
+    background-color: #653463;
+    background-size:cover;
+    height: 100%;
+    width: 100%;
 }
 
 .cabecalho {
@@ -22,120 +16,151 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 24px;
-}
-
-fieldset{
-    color: rgb(255, 255, 255);
-    border: rgb(0, 0, 0) 1px solid;
-    margin-bottom: 10px;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding: 30px;
-    background-color: #331a32;
-    border-radius: 15px;
-}
-
-.botao {
-    background-color: #653463;
-    margin-top: 20PX;
-    margin-left: 35%;
-    margin-right: 35%;
-    width: 120px;
-    height: 50px;
-    color: rgb(255, 255, 255);
-
-    border: none;
-    text-align: center;
-    box-shadow: 4px 5px 4px rgna(0, 0, 0, 0.25);
-    border-radius: 20px;
-
-    cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow,transform;
-}
-
-.botao:hover,.botao:focus,.botao:active {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.botao a{
     color: white;
-}
-.botao a:hover{
-    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
 }
 
-.inputBox{
-    position: relative;
+/*header{
+    background-color: transparent;
+    background: linear-gradient(0deg, rgba(255,255,255,0), rgb(25, 23, 23) 90%);
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}*/
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    height: 80vh;
+    color: #ffffff; 
+}
+
+.tudo{
+    display: flex;
+    gap: 20px;
+}
+
+#box{
+    background-color: #331a32;
+    padding: 50px;
+    border-radius: 30px;
+    font-size: 22px;
+    line-height: 170%;  
+    transition: 1s;
 }
 
 input{
-    position: relative;
-    font-size: 15px;
-}
-
-.inputUser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid rgb(255, 255, 255);
-    outline: none;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 2px;
-}
-
-.labelInput{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events:none;
-    transition: .5s;
-}
-
-.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
-    top: -20px;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-}
-
-#data_nascimento{
-    border: none;
     padding: 8px;
     border-radius: 10px;
-    outline: none;
-    font-size: 15px;
+    border-style: none;
+    font-family: 'Righteous', cursive;
 }
 
-#submit{
-    background-image:linear-gradient(to right, #653463, black) ;
-    width: 100%;
-    border: none;
-    padding: 15px;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    cursor: pointer;
+#salarioBruto{
+    padding: 8px;
     border-radius: 10px;
+    border-style: none;
+    font-family: 'Righteous', cursive;
+}
+#dependentes{
+    padding: 8px;
+    border-radius:10px;
+    border-style: none;
+    font-family: 'Righteous', cursive;
 }
 
-#submit:hover{
-    background-image: linear-gradient(to right, #653463, black);
+
+#check{
+    font-size: 15px;
 }
 
-footer {
+#calc{
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    color: #1a1a1a;
+    background-color: #ffffff63;
+    font-family: 'Righteous', cursive;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#calc:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 70%;
+}
+
+
+#box1{
+    display: none;
+    color: white;
+    background-color: #331a32;
+}
+
+#box1 h2{
+    padding-top: 10px;
+    display: none;
+    flex-direction: column; 
+    background-color: #331a32;
+}
+
+box1{
+    background-color: #331a32;
+}
+
+table{
+    background-color: #331a32;
+}
+
+#reset{
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    color: #1a1a1a;
+    background-color: #ffffff63;
+    font-family: 'Righteous', cursive;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#reset:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 70%;
+}   
+
+.botao{
+    border-style: none;
+    border-radius: 10px;
+    width: 100%;
+    color: #1a1a1a;
+    background-color: #ffffff63;
+    font-family: 'Righteous', cursive;
+    height: 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    font-size: 70%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    position: absolute;
     width: 100vw;
-    height: 100px;
+    margin-bottom: 1200px;
+
+    height: 190px;
     align-content: flex-end;
     display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    color: #331a32;
+
 }
 
-
+footer h2{
+    color: white;
+    border: black;
+}
